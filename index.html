@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang='ro'>
+<head>
+	<title>Formular declaratie CJSU74/2020, pdf, olograf, online/offline, GDPR</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content='width=device-width,initial-scale=1,minimum-scale=0.5,maximum-scale=5,user-scalable=yes,minimal-ui' name='viewport'/>
+
+	<meta content='valentinivascu.ro' name='generator'/>
+	<meta content='@valentinivascu' name='twitter:site'/>
+	<meta content='@valentinivascu' name='twitter:creator'/>
+	<meta content='valentinivascu.ro' name='DC.custodian'/>
+	<meta content='webmaster@valentinivascu.ro' name='DC.creator.address'/>
+	<meta content='text/html' name='DC.format'/>
+	<meta content='ro' name='DC.language'/>
+	<meta content='DECLARAȚIE PE PROPRIE RĂSPUNDERE prevenire COVID-19 cf. Hotărâre CJSU Constanța nr.74/19.11.2020, se poate semna online, GDPR compliant' property='og:site_name'/>
+	<meta content='https://cjsu74.valentinivascu.ro/' name='twitter:domain'/>
+	<meta content='Formular declaratie CJSU Constanța 74/2020, pdf, olograf, online/offline, GDPR' property='og:title'/>
+	<meta content='https://cjsu74.valentinivascu.ro/' property='og:url'/>
+	<meta content='website' property='og:type'/>
+	<meta content='DECLARAȚIE PE PROPRIE RĂSPUNDERE prevenire COVID-19 cf. Hotărâre CJSU Constanța nr.74/19.11.2020, se poate semna olograf digital, online offline, GDPR compliant' name='description'/>
+	<meta content='DECLARAȚIE PE PROPRIE RĂSPUNDERE prevenire COVID-19 cf. Hotărâre CJSU Constanța nr.74/19.11.2020, se poate semna olograf digital, online offline, GDPR compliant' property='og:description'/>
+	<meta content='DECLARAȚIE PE PROPRIE RĂSPUNDERE prevenire COVID-19 cf. Hotărâre CJSU Constanța nr.74/19.11.2020, se poate semna olograf digital, online offline, GDPR compliant' name='twitter:description'/>
+	<meta content='summary' name='twitter:card'/>
+	<meta content='images/preview.jpg' property='og:image'/>
+	<meta name="description" content="DECLARAȚIE PE PROPRIE RĂSPUNDERE prevenire COVID-19 cf. Hotărâre CJSU Constanța nr.74/19.11.2020, se poate semna olograf digital, online offline, GDPR compliant">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest?v=v1.0.0">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/vendors/bootstrap.min.css?v=4.1.3">
+	<link rel="stylesheet" href="css/vendors/font-awesome-4.7.0/css/font-awesome.min.css?v=4.7.0">
+	<link rel="stylesheet" href="css/main.css?v=v1.0.0">
+
+	<script src="jslibs/vendors/jquery.min.js?v=3.4.1"></script>
+	<script src="jslibs/vendors/jspdf.min.js?v=1.5.3"></script>
+	<script src="jslibs/vendors/jSignature.min.js?v=2.1.3"></script>
+
+	<script src="jslibs/assets.js?v=v1.0.0"></script>
+	<script src="jslibs/main.js?v=v1.0.0"></script>
+</head>
+
+<body>
+	<form role="form" method="put" id="declaratie">
+		<div class="container">
+			<div class="p-4"></div>
+			<h1 class="text-center">DECLARAȚIE PE PROPRIE RĂSPUNDERE</h1>
+
+			<div class="text-center">
+				cf. Hotărâre CJSU Constanța nr.74/19.11.2020 - prevenire COVID-19<br/>
+				<sup>1)</sup> se poate SEMNA olograf ONLINE/OFFLINE si exporta PDF, formular GDPR compliant
+			</div>
+
+			<div class="p-4"></div>
+
+
+			<div class="form-group row">
+				<label for="nume" class="col-md-2 col-12 col-form-label text-center">Subsemnatul/a:</label>
+
+				<div class="col-md-4 col-12">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<i class="fa fa-address-card"></i>
+							</div>
+						</div>
+
+						<input id="nume" name="nume" placeholder="Nume de familie" type="text" required data-required="required" class="form-control" value="">
+					</div>
+				</div> <!-- /#nume -->
+
+				<div class="col-md-4 mt-md-0 col-12 mt-2">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<i class="fa fa-address-card"></i>
+							</div>
+						</div>
+
+						<input id="prenume" name="prenume" placeholder="Prenume" type="text" required data-required="required" class="form-control" value="">
+					</div>
+				</div> <!-- /#prenume -->
+			</div> <!-- /#nume_prenume -->
+
+			<div class="form-group row">
+				<label for="adresa_locuintei" class="col-md-2 col-12 col-form-label text-center">Adresa locuinței:</label>
+
+				<div class="col-md-8 col-12">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<i class="fa fa-home"></i>
+							</div>
+						</div>
+
+						<input id="adresa_locuintei" name="adresa_locuintei" placeholder="Adresa locuinței" type="text" required data-required="required" class="form-control" value="">
+					</div>
+				</div>
+
+				<span id="adresa_linia_2HelpBlock" class="form-text text-muted col-12">
+					Se va completa adresa locuinței în care persoana locuiește în fapt, indiferent dacă este identică sau nu cu cea menționată în actul de identitate.
+				</span>
+			</div> <!-- /#adresa_locuintei -->
+
+			<div class="form-group row">
+				<label for="data_nastere_ziua" class="col-md-2 col-12 col-form-label text-center">Născut/ă în data de:</label>
+
+				<div class="col-md-1 col-3 p-0">
+					<input id="data_nastere_ziua" name="data_nastere_ziua" placeholder="zi" type="number" min="1" max="31" step="1" required data-required="required" class="form-control" value="">
+				</div>
+
+				<div class="col-md-1 col-4 p-0 pl-1">
+					<input id="data_nastere_luna" name="data_nastere_luna" placeholder="lună" type="number" min="1" max="12" step="1" class="form-control" required data-required="required" value="">
+				</div>
+
+				<div class="col-md-2 col-5 p-0 pl-1">
+					<input id="data_nastere_an" name="data_nastere_an" placeholder="an" type="number" min="1920" max="2010" step="1" class="form-control" required data-required="required" value="">
+				</div>
+			</div> <!-- /#data_nastere -->
+
+			<div id="locul_deplasarii">
+				<div class="form-group row">
+					<label for="locul_deplasarii_1" class="col-12 col-form-label text-left">Locul/locurile deplasării (se va menționa traseul):</label>
+
+					<div class="col-md-8 col-12">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text">
+									<i class="fa fa-address-card-o"></i>
+								</div>
+							</div>
+
+							<input id="locul_deplasarii_1" name="locul_deplasarii_1" placeholder="Locul deplasării - 1" type="text" required data-required="required" class="form-control" value="">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<div class="col-md-8 col-12">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text">
+									<i class="fa fa-address-card-o"></i>
+								</div>
+							</div>
+
+							<input id="locul_deplasarii_2" name="locul_deplasarii_2" placeholder="Locul deplasării - 2" type="text" class="form-control"  value="">
+						</div>
+					</div>
+				</div>
+			</div> <!-- /#locul_deplasarii -->
+
+
+			<div class="form-group col-12">
+				<strong>Motivul deplasării în afara localităţii/zonei carantinate:</strong>
+			</div>
+
+			<div class="form-group row">
+				<div class="col-12">
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_1" id="motivul_deplasarii_1" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_1" class="custom-control-label">interes profesional între locuință/gospodărie și locul/locurile de desfășurare a activității profesionale și înapoi;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_2" id="motivul_deplasarii_2" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_2" class="custom-control-label">comercializarea de produse agroalimentare de către producătorii agricoli, cu precizarea certificatului de producător;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_3" id="motivul_deplasarii_3" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_3" class="custom-control-label">alte motive justificate (ex: îngrijirea/însoțirea copiilor/membrilor de familie; îngrijirea unei rude/afin sau persoană aflată în întreținere; asistența persoanelor vârstnice, bolnave sau cu dizabilități; deces al unui membru de familie;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_4" id="motivul_deplasarii_4" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_4" class="custom-control-label">asistență medicală care nu poate fi amânată și nici realizată de la distanță;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_5" id="motivul_deplasarii_5" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_5" class="custom-control-label">urgențe medicale;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_6" id="motivul_deplasarii_6" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_6" class="custom-control-label">deplasarea persoanelor la programe sau proceduri în unitățile sanitare și de tratament, inclusiv tratament de recuperare, medicină fizică și balneologie;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_7" id="motivul_deplasarii_7" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_7" class="custom-control-label">participarea la slujbele religioase de înmormântare.</label>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="form-group col-12">
+				<strong>Motivul deplasării în afara locuinței/gospodăriei din zona carantinată în intervalul 05.00 - 23.00:</strong>
+			</div>
+
+			<div class="form-group row">
+				<div class="col-12">
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_8" id="motivul_deplasarii_8" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_8" class="custom-control-label">interes profesional între locuință/gospodărie și locul/locurile de desfășurare a activității profesionale și înapoi;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_9" id="motivul_deplasarii_9" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_9" class="custom-control-label">pentru asistență medicală care nu poate fi amânată și nici realizată de la distanta;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_10" id="motivul_deplasarii_10" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_10" class="custom-control-label">deplasările scurte, în apropierea locuinței/gospodăriei, legate de activitatea fizică individuală a persoanelor (cu excluderea oricăror activități sportive de echipă), cât și pentru nevoile animalelor de companie/domestice;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_11" id="motivul_deplasarii_11" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_11" class="custom-control-label">în scopul donării de sânge, la centrele de transfuzie sanguină;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_12" id="motivul_deplasarii_12" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_12" class="custom-control-label">în scop umanitar sau de voluntariat;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_13" id="motivul_deplasarii_13" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_13" class="custom-control-label">pentru realizarea de activități agricole;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_14" id="motivul_deplasarii_14" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_14" class="custom-control-label">deplasarea producătorilor agricoli pentru comercializarea de produse agroalimentare;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_15" id="motivul_deplasarii_15" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_15" class="custom-control-label">îngrijirea sau administrarea unei proprietăți din altă localitate; eliberarea de documente necesare pentru obținerea unor drepturi;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_16" id="motivul_deplasarii_16" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_16" class="custom-control-label">la programe sau proceduri în unități sanitare și de tratament, inclusiv tratament de recuperare, medicină fizică și balneologie;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_17" id="motivul_deplasarii_17" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_17" class="custom-control-label">pentru achiziția, service-ul, efectuarea ITP sau alte operațiuni de întreținere a vehiculelor, activități care nu pot fi efectuate în localitatea de domiciliu;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_18" id="motivul_deplasarii_18" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_18" class="custom-control-label">alte motive justificate precum: deplasarea pentru asigurarea de bunuri care acoperă necesitățile de bază ale persoanelor; îngrijirea/însoțirea copiilor/membrilor de familie; îngrijirea unei rude/afin sau persoană aflată în întreținere, asistența persoanelor vârstnice, bolnave sau cu dizabilități, deces al unui membru de familie;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_19" id="motivul_deplasarii_19" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_19" class="custom-control-label">pentru participarea la slujbele religioase în condițiile prezentei hotărâri;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_20" id="motivul_deplasarii_20" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_20" class="custom-control-label">deplasarea către instituțiile publice și financiare.</label>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="form-group col-12">
+				<strong>Motivul deplasării în afara locuinței/gospodăriei din zona carantinată în intervalul 23.00 - 05.00:</strong>
+			</div>
+
+			<div class="form-group row">
+				<div class="col-12">
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_21" id="motivul_deplasarii_21" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+
+						<label for="motivul_deplasarii_21" class="custom-control-label col-md-8">
+							în interes profesional. Menționez că îmi desfășor activitatea profesională la:
+
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-building"></i>
+									</div>
+								</div>
+
+								<input id="organizatie" name="organizatie" placeholder="instituția/societatea/organizația" type="text" class="form-control w-75" value="">
+							</div>
+
+
+							cu sediul în
+
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-address-card"></i>
+									</div>
+								</div>
+
+								<input id="sediu_organizatie" name="sediu_organizatie" placeholder="Sediu organizație" type="text" class="form-control w-75" value="">
+							</div>
+
+
+							şi cu puncte de lucru la următoarele adrese:
+
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-address-card-o"></i>
+									</div>
+								</div>
+
+								<input id="adresa_punct_de_lucru_1" name="adresa_punct_de_lucru_1" placeholder="Adresă punct de lucru - 1" type="text" class="form-control w-75" value="">
+							</div>
+
+							<div class="input-group mt-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-address-card-o"></i>
+									</div>
+								</div>
+
+								<input id="adresa_punct_de_lucru_2" name="adresa_punct_de_lucru_2" placeholder="Adresă punct de lucru - 2" type="text" class="form-control w-75" value="">
+							</div>
+						</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_22" id="motivul_deplasarii_22" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_22" class="custom-control-label">asistență medicală care nu poate fi amânată și nici realizată de la distanță;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_23" id="motivul_deplasarii_23" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_23" class="custom-control-label">achiziționare de medicamente;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_24" id="motivul_deplasarii_24" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_24" class="custom-control-label">îngrijirea/însoțirea copilului și/sau asistența persoanelor vârstnice, bolnave sau cu dizabilități;</label>
+					</div>
+
+					<div class="custom-control custom-checkbox">
+						<input name="motivul_deplasarii_25" id="motivul_deplasarii_25" type="checkbox" class="custom-control-input" value="check" aria-describedby="motivul_deplasariiHelpBlock">
+						<label for="motivul_deplasarii_25" class="custom-control-label">deces al unui membru al familiei.</label>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div id="signature-container" class="form-group">
+				<label class="col-form-label">Semnătura</label>
+
+				<div id="signature" class=""></div>
+
+				<span id="semnaturaHelpBlock" class="form-text text-muted">
+					Pentru ecrane cu touch screen (ex smartphone) puteţi semna cu degetul sau cu un stylus dedicat/improvizat (ex beţişor cu vată uşor umezit, degetele făcând contact cu vata).
+					Pentru ecrane fără touch se poate utiliza mouse-ul. Pentru ştergere semnătură apăsaţi pe simbolul radieră <i class="fa fa-fw fa-eraser"></i> aflat pe tabla de semnare in colţul dreapta sus.
+				</span>
+
+				<i id="signature-reset" class="fa fa-fw fa-lg fa-eraser pointer"></i>
+				<input type="hidden" id="semnatura" name="semnatura" value="" />
+			</div> <!-- /#signature-container -->
+
+			<div class="text-center">
+				<button class="btn btn-info" id="generatePdfBtn">Descarcă declaraţia completată şi semnată</button>
+			</div>
+
+			<div class="p-2"></div>
+		</div> <!-- /.container -->
+	</form>
+
+
+	<div class="container-fluid text-left">
+		<i class="fa fa-fw fa-lg fa-github"></i>
+		<em><sup>1)</sup> aplicaţie FOSS - cod sursa disponibil la <a rel="license nofollow noopener" target="_blank" href="https://github.com/oriceon/cjsuct74">https://github.com/oriceon/cjsuct74</a> (v1.0.0).
+		Datele introduse în formular nu părăsesc calculatorul/dispozitivul de accesare. Proiect susţinut de <a rel="me" target="_blank" href="https://www.valentinivascu.ro">valentinivascu.ro</a>.</em>
+	</div>
+
+	<div class="p-2"></div>
+
+	<div id="loading-container" class="d-none"><div class="loading"><div></div></div></div>
+	<img src="images/android-swipe-down-notification-panel.gif" id="android-downloads-indicator" class="d-none" />
+</body>
+</html>

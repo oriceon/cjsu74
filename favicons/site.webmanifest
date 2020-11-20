@@ -1,0 +1,15 @@
+{
+    "name": "Declaratie CJSU Constanta nr. 74/19.11.2020 prevenire COVID-19",
+    "short_name": "Declaratie CJSU CT nr. 74",
+    "start_url": "https://cjsu74.valentinivascu.ro",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
