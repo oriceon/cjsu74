@@ -1,4 +1,4 @@
-const PRECACHE = 'offline-v2.0.0-c5';
+const PRECACHE = 'offline-v2.0.2-c8';
 const RUNTIME  = 'runtime';
 
 // A list of local resources we always want to be cached.
@@ -7,10 +7,10 @@ const PRECACHE_URLS = [
   '/css/vendors/font-awesome-4.7.0/css/font-awesome.min.css?v=4.7.0',
   '/css/vendors/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0',
 
-  '/css/main.css?v=v2.0.0',
+  '/css/main.css?v=v2.0.2',
   '/favicons/favicon-32x32.png',
   '/favicons/android-chrome-192x192.png',
-  '/favicons/site.webmanifest?v=v2.0.0',
+  '/favicons/site.webmanifest?v=v2.0.2',
   '/images/android-swipe-down-notification-panel.gif',
   '/images/preview.jpg',
 
@@ -19,8 +19,8 @@ const PRECACHE_URLS = [
   '/jslibs/vendors/jspdf.min.js?v=1.5.3',
 
   'index.html', './',
-  '/jslibs/main.js?v=v2.0.0',
-  '/jslibs/assets.js?v=v2.0.0'
+  '/jslibs/main.js?v=v2.0.2',
+  '/jslibs/assets.js?v=v2.0.2'
 
 ];
 

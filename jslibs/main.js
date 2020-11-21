@@ -158,7 +158,7 @@ $(function () {
 		doc.text(positions['today'][0], positions['today'][1], today);
 
 
-		var docname = 'DECLARAȚIE PE PROPRIE RĂSPUNDERE COVID-19 cf. Hotărâre CJSU Constanța nr.74, ' + formData.nume + ' ' + formData.prenume + ', ' + today + '.pdf';
+		var docname = 'DECLARAȚIE PE PROPRIE RĂSPUNDERE COVID-19 cf. Hotărâre CJSU Constanța nr.74, ' + formData.nume + ' ' + formData.prenume + ', ' + today + ', ' + Math.floor(Math.random() * 100) + '.pdf';
 		doc.save(docname, { returnPromise: true }).then( setTimeout(function(){
 			loadingDiv.addClass('d-none');
 			generatePdfBtn.prop('disabled',false);
