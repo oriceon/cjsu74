@@ -16,53 +16,52 @@ if ('serviceWorker' in navigator) {
 let formData = {}
 let positions = {
 
-	nume : [70, 16.5],
-	prenume : [70, 16.5],
+	nume : [70, 13.5],
+	prenume : [70, 13.5],
 
-	data_nastere_ziua: [70, 25.5],
-	data_nastere_luna: [76, 25.5],
-	data_nastere_an: [83, 25.5],
+	data_nastere_ziua: [70, 18.5],
+	data_nastere_luna: [76.5, 18.5],
+	data_nastere_an: [83, 18.5],
 
-	adresa_locuintei : [64, 36.5],
+	adresa_locuintei : [64, 26.5],
 
-	locul_deplasarii_1: [15, 52],
-	locul_deplasarii_2: [15, 61],
+	locul_deplasarii_1: [15, 42],
+	locul_deplasarii_2: [15, 50.5],
 
-	motivul_deplasarii_1  : [18.8, 75.2+0.692],
-	motivul_deplasarii_2  : [18.8, 79.8+0.692],
-	motivul_deplasarii_3  : [18.8, 84.7+0.692],
-	motivul_deplasarii_4  : [18.8, 94.1+0.692],
-	motivul_deplasarii_5  : [18.8, 99+0.692],
-	motivul_deplasarii_6  : [18.8, 103.7+0.692],
-	motivul_deplasarii_7  : [18.8, 114.6+0.692],
+	motivul_deplasarii_1  : [18.8, 69.5],
+	motivul_deplasarii_2  : [18.8, 74.2],
+	motivul_deplasarii_3  : [18.8, 78.9],
+	motivul_deplasarii_4  : [18.8, 88.5],
+	motivul_deplasarii_5  : [18.8, 93.2],
+	motivul_deplasarii_6  : [18.8, 97.8],
+	motivul_deplasarii_7  : [18.8, 108.9],
 
-	motivul_deplasarii_8  : [18.7, 126.6+0.692],
-	motivul_deplasarii_9  : [18.7, 131.4+0.692],
-	motivul_deplasarii_10 : [18.7, 136+0.692],
-	motivul_deplasarii_11 : [18.7, 145.5+0.692],
-	motivul_deplasarii_12 : [18.7, 150.3+0.692],
-	motivul_deplasarii_13 : [18.7, 155+0.692],
-	motivul_deplasarii_14 : [18.7, 159.9+0.692],
-	motivul_deplasarii_15 : [18.7, 164.5+0.692],
-	motivul_deplasarii_16 : [18.7, 174+0.692],
-	motivul_deplasarii_17 : [18.7, 183.5+0.692],
-	motivul_deplasarii_18 : [18.7, 193+0.692],
-	motivul_deplasarii_19 : [18.7, 207.3+0.692],
-	motivul_deplasarii_20 : [18.7, 212+0.692],
+	motivul_deplasarii_8  : [18.7, 122.8],
+	motivul_deplasarii_9  : [18.7, 137],
+	motivul_deplasarii_10 : [18.7, 141.7],
+	motivul_deplasarii_11 : [18.7, 146.5],
+	motivul_deplasarii_12 : [18.7, 155.9],
+	motivul_deplasarii_13 : [18.7, 160.7],
+	motivul_deplasarii_14 : [18.7, 165.4],
+	motivul_deplasarii_15 : [18.7, 170.2],
+	motivul_deplasarii_16 : [18.7, 174.9],
+	motivul_deplasarii_17 : [18.7, 184.4],
+	motivul_deplasarii_18 : [18.7, 193.9],
+	motivul_deplasarii_19 : [18.7, 198.6],
 
-	motivul_deplasarii_21 : [18.7, 224.3+0.692],
-	motivul_deplasarii_22 : [18.7, 248.2+0.692],
-	motivul_deplasarii_23 : [18.7, 253.6+0.692],
-	motivul_deplasarii_24 : [18.7, 259.2+0.692],
-	motivul_deplasarii_25 : [18.7, 264.5+0.692],
+	motivul_deplasarii_20 : [18.7, 212.9],
+	motivul_deplasarii_21 : [18.7, 236.7],
+	motivul_deplasarii_22 : [18.7, 242.1],
+	motivul_deplasarii_23 : [18.7, 247.6],
+	motivul_deplasarii_24 : [18.7, 258.5],
 
-	organizatie: [91, 227],
-	sediu_organizatie: [58, 231.8],
-	adresa_punct_de_lucru_1: [104, 236.8],
-	adresa_punct_de_lucru_2: [36.5, 241.5],
+	organizatie: [91, 215],
+	sediu_organizatie: [56, 219.8],
+	adresa_punct_de_lucru_1: [104, 224.5],
+	adresa_punct_de_lucru_2: [36.5, 229.2],
 
-	today : [54, 282],
-	semnatura : [130, 280],
+	today : [54, 280],
+	semnatura : [130, 278],
 
 }
 
@@ -136,7 +135,7 @@ $(function () {
 			nume_width  = doc.getTextWidth(formData.nume),
 			left_padd   = 15;
 
-		positions.prenume = [nume_width + nume_margin + left_padd, 16.5];
+		positions.prenume = [nume_width + nume_margin + left_padd, positions.prenume[1]];
 
 
 		for (var field in sData) {
