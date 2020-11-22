@@ -2,7 +2,7 @@
 
 if ('serviceWorker' in navigator) {
 	//console.log('CLIENT: service worker registration in progress.');
-	navigator.serviceWorker.register('/sw-2.1.0.js').then(function(registration) {
+	navigator.serviceWorker.register('/sw.js').then(function(registration) {
 		//console.log('CLIENT: service worker registration complete.');
 		// registration.update();
 	}, function() {
