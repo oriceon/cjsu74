@@ -29,21 +29,21 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-	<link rel="manifest" href="favicons/site.webmanifest?v=v2.0.2">
+	<link rel="manifest" href="favicons/site.webmanifest?v=v2.1.0">
 	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="css/vendors/bootstrap.min.css?v=4.1.3">
 	<link rel="stylesheet" href="css/vendors/font-awesome-4.7.0/css/font-awesome.min.css?v=4.7.0">
-	<link rel="stylesheet" href="css/main.css?v=v2.0.2">
+	<link rel="stylesheet" href="css/main.css?v=v2.1.0">
 
 	<script src="jslibs/vendors/jquery.min.js?v=3.4.1"></script>
 	<script src="jslibs/vendors/jspdf.min.js?v=1.5.3"></script>
 	<script src="jslibs/vendors/jSignature.min.js?v=2.1.3"></script>
 
-	<script src="jslibs/assets.js?v=v2.0.2"></script>
-	<script src="jslibs/main.js?v=v2.0.2"></script>
+	<script src="jslibs/assets.js?v=v2.1.0"></script>
+	<script src="jslibs/main.js?v=v2.1.0"></script>
 </head>
 
 <body>
@@ -57,8 +57,11 @@
 				<sup>1)</sup> se poate SEMNA olograf ONLINE/OFFLINE si exporta PDF, formular GDPR compliant
 			</div>
 
-			<div class="p-4"></div>
+			<div class="text-center text-muted mt-1">
+				Aplicația nu este autorizată de nicio autoritate, prezentarea declarației în format electronic se face pe răspunderea dvs.
+			</div>
 
+			<div class="p-3"></div>
 
 			<div class="form-group row">
 				<label for="nume" class="col-md-2 col-12 col-form-label text-center">Subsemnatul/a:</label>
@@ -368,8 +371,12 @@
 				<input type="hidden" id="semnatura" name="semnatura" value="" />
 			</div> <!-- /#signature-container -->
 
-			<div class="text-center">
-				<button class="btn btn-info" id="generatePdfBtn">Descarcă declaraţia completată şi semnată</button>
+			<div class="text-center text-muted">
+				Prin apăsarea butonului de mai jos confirmați că ați citit <a href="/termeni-si-conditii.html" title="Termeni și condiții" target="_blank" a>termenii și condițiile</a>, <a href="/confidentialitate.html" title="Condifențialitate" target="_blank" a>nota privind confidențialitatea</a>, ați înțeles și acceptați folosirea aplicației.
+			</div>
+
+			<div class="text-center mt-3">
+				<button class="btn btn-info" id="generatePdfBtn">Accept și descarc declaraţia completată şi semnată</button>
 			</div>
 
 			<div class="p-2"></div>
@@ -379,8 +386,9 @@
 
 	<div class="container-fluid text-left">
 		<i class="fa fa-fw fa-lg fa-github"></i>
-		<em><sup>1)</sup> aplicaţie FOSS - cod sursa disponibil la <a rel="license nofollow noopener" target="_blank" href="https://github.com/oriceon/cjsu74">https://github.com/oriceon/cjsu74</a> (v2.0.2).
-		Datele introduse în formular nu părăsesc calculatorul/dispozitivul de accesare. Proiect susţinut de <a rel="me" target="_blank" href="https://www.valentinivascu.ro">valentinivascu.ro</a>.</em>
+		<em><sup>1)</sup> aplicaţie FOSS - cod sursă disponibil la <a rel="license nofollow noopener" target="_blank" href="https://github.com/oriceon/cjsu74">https://github.com/oriceon/cjsu74</a> (v2.1.0).
+		Datele introduse în formular NU PĂRĂSESC calculatorul/dispozitivul de accesare al celui care completează declarația (utilizatorului). <br />
+		Proprietarul site-ului nu stochează informațiile introduse de către utilizator pentru generarea declarației. Proiect susţinut de <a rel="me" target="_blank" href="https://www.valentinivascu.ro">valentinivascu.ro</a>.</em>
 	</div>
 
 	<div class="p-2"></div>
