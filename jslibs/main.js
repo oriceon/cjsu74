@@ -119,7 +119,7 @@ $(function () {
     	doc.addFont('Merriweather_Regular.ttf', 'Merriweather_Regular', 'normal');
     	doc.setFont('Merriweather_Regular');
 		doc.setFontSize(11);
-		// doc.setTextColor('#004890');
+		doc.setTextColor('#091588');
 		doc.addImage(background, 'PNG', 0, 0, 210, 297);
 
 		for (var field in sData) {
