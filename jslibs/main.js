@@ -21,46 +21,48 @@ let positions = {
 
 	data_nastere_ziua: [70, 18.5],
 	data_nastere_luna: [76.5, 18.5],
-	data_nastere_an: [83, 18.5],
+	data_nastere_an: [83.5, 18.5],
 
-	adresa_locuintei : [64, 26.5],
+	adresa_locuintei : [64, 25],
 
-	locul_deplasarii_1: [15, 42],
-	locul_deplasarii_2: [15, 50.5],
+	locul_deplasarii_1: [15, 38.5],
+	locul_deplasarii_2: [15, 47],
 
-	motivul_deplasarii_1  : [18.8, 69.5],
-	motivul_deplasarii_2  : [18.8, 74.2],
-	motivul_deplasarii_3  : [18.8, 78.9],
-	motivul_deplasarii_4  : [18.8, 88.5],
-	motivul_deplasarii_5  : [18.8, 93.2],
-	motivul_deplasarii_6  : [18.8, 97.8],
-	motivul_deplasarii_7  : [18.8, 108.9],
+	motivul_deplasarii_1  : [18.8, 65.9],
+	motivul_deplasarii_2  : [18.8, 70.7],
+	motivul_deplasarii_3  : [18.8, 75.4],
+	motivul_deplasarii_4  : [18.8, 85],
+	motivul_deplasarii_5  : [18.8, 89.7],
+	motivul_deplasarii_6  : [18.8, 94.5],
+	motivul_deplasarii_7  : [18.8, 105.4],
+	motivul_deplasarii_8  : [18.7, 110.9],
 
-	motivul_deplasarii_8  : [18.7, 122.8],
-	motivul_deplasarii_9  : [18.7, 137],
-	motivul_deplasarii_10 : [18.7, 141.7],
-	motivul_deplasarii_11 : [18.7, 146.5],
-	motivul_deplasarii_12 : [18.7, 155.9],
-	motivul_deplasarii_13 : [18.7, 160.7],
-	motivul_deplasarii_14 : [18.7, 165.4],
-	motivul_deplasarii_15 : [18.7, 170.2],
-	motivul_deplasarii_16 : [18.7, 174.9],
-	motivul_deplasarii_17 : [18.7, 184.4],
-	motivul_deplasarii_18 : [18.7, 193.9],
-	motivul_deplasarii_19 : [18.7, 198.6],
+	motivul_deplasarii_9  : [18.7, 124.8], // + 2
+	motivul_deplasarii_10 : [18.7, 139],
+	motivul_deplasarii_11 : [18.7, 143.7],
+	motivul_deplasarii_12 : [18.7, 148.5],
+	motivul_deplasarii_13 : [18.7, 157.9],
+	motivul_deplasarii_14 : [18.7, 162.7],
+	motivul_deplasarii_15 : [18.7, 167.4],
+	motivul_deplasarii_16 : [18.7, 172.2],
+	motivul_deplasarii_17 : [18.7, 176.9],
+	motivul_deplasarii_18 : [18.7, 186.4],
+	motivul_deplasarii_19 : [18.7, 195.9],
+	motivul_deplasarii_20 : [18.7, 200.6],
+	motivul_deplasarii_21 : [18.7, 205.3],
 
-	motivul_deplasarii_20 : [18.7, 212.9],
-	motivul_deplasarii_21 : [18.7, 236.7],
-	motivul_deplasarii_22 : [18.7, 242.1],
-	motivul_deplasarii_23 : [18.7, 247.6],
-	motivul_deplasarii_24 : [18.7, 258.5],
+	motivul_deplasarii_22 : [18.7, 219.6],
+	motivul_deplasarii_23 : [18.7, 243.3],
+	motivul_deplasarii_24 : [18.7, 248.8],
+	motivul_deplasarii_25 : [18.7, 254.2],
+	motivul_deplasarii_26 : [18.7, 265.2],
 
-	organizatie: [91, 215],
-	sediu_organizatie: [56, 219.8],
-	adresa_punct_de_lucru_1: [104, 224.5],
-	adresa_punct_de_lucru_2: [36.5, 229.2],
+	organizatie: [90, 221.5],
+	sediu_organizatie: [56, 226.5],
+	adresa_punct_de_lucru_1: [104, 231.2],
+	adresa_punct_de_lucru_2: [36.5, 236],
 
-	today : [54, 280],
+	today : [54, 287],
 	semnatura : [130, 278],
 
 }
@@ -102,11 +104,21 @@ $(function () {
 
 	signatureHolographic.jSignature();
 	signatureBlackboardReset.click(function(e){signatureHolographic.jSignature('reset')});
-	
-	declaratieForm.submit(function(e){
+
+	// fill inputs with previous filled form
+	$.each(declaratieForm.find('input:not([type="checkbox"], [type="hidden"])'), function(key, elm) {
+		$(elm).val(localStorage.getItem($(elm).attr('name')));
+	});
+
+	declaratieForm.submit(function(e) {
 		e.preventDefault();
 
-		generatePdfBtn.prop('disabled',true);
+		// save inputs in local storage
+		$.each(declaratieForm.find('input:not([type="checkbox"], [type="hidden"])'), function(key, elm) {
+			localStorage.setItem($(elm).attr('name'), $(elm).val());
+		});
+
+		generatePdfBtn.prop('disabled', true);
 		loadingDiv.removeClass('d-none');
 
 		var sData = declaratieForm.find(':input').not('#semnatura').serializeArray();
